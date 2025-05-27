@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0ox6aafhfyqr"]
+
+[ext_resource type="Script" uid="uid://c8j80fk5ml3k5" path="res://Scripts/main_menu.gd" id="1_28flt"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_28flt")
+
+[node name="Builder_Cards" type="Button" parent="."]
+offset_right = 100.0
+offset_bottom = 75.0
+text = "Cards"
+
+[node name="Builder_Rules" type="Button" parent="."]
+offset_top = 100.0
+offset_right = 100.0
+offset_bottom = 175.0
+text = "Rules"
+
+[node name="Level_1" type="Button" parent="."]
+offset_top = 200.0
+offset_right = 100.0
+offset_bottom = 275.0
+text = "Lv1"
+
+[node name="Level_2" type="Button" parent="."]
+offset_top = 300.0
+offset_right = 100.0
+offset_bottom = 375.0
+text = "Lv2"
+
+[node name="Level_3" type="Button" parent="."]
+offset_top = 400.0
+offset_right = 100.0
+offset_bottom = 475.0
+text = "Lv3
+"
+
+[connection signal="pressed" from="Builder_Cards" to="." method="_on_builder_cards_pressed"]
+[connection signal="pressed" from="Builder_Rules" to="." method="_on_builder_rules_pressed"]

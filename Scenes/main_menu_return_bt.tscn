@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0gq17ipt2dc0"]
+
+[ext_resource type="Script" uid="uid://c60jg1aqt8sfb" path="res://Scripts/main_menu_return_bt.gd" id="1_jbtu5"]
+
+[node name="MainMenuReturnBt" type="Button"]
+text = "Menu"
+script = ExtResource("1_jbtu5")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

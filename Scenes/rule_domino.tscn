@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://bm2b5afo7bkse"]
+
+[ext_resource type="Script" uid="uid://oijdrslovnni" path="res://Scripts/rule_domino.gd" id="1_qee6m"]
+
+[node name="RuleDomino" type="Button"]
+custom_minimum_size = Vector2(80, 180)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_qee6m")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.663271, 0.538863, 0.680477, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="current_state" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="read_symbol" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="new_state" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="write_symbol" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="direction" type="Label" parent="VBoxContainer"]
+layout_mode = 2

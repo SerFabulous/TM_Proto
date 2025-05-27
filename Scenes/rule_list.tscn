@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://cghuaxwemkkpp"]
+
+[ext_resource type="Script" uid="uid://ncfpdipjbhxk" path="res://Scripts/rule_list.gd" id="1_8k8ko"]
+
+[node name="RuleList" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_8k8ko")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(400, 300)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
+custom_minimum_size = Vector2(160, 180)
+layout_mode = 2
+size_flags_horizontal = 3

@@ -1,0 +1,66 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm8emmrlbhn2m"]
+
+[ext_resource type="Script" uid="uid://bme6u5ngke1e5" path="res://Scripts/card.gd" id="1_0qqmn"]
+
+[node name="Card" type="Button"]
+custom_minimum_size = Vector2(80, 180)
+anchors_preset = -1
+anchor_right = 0.071
+anchor_bottom = 0.282
+offset_right = 0.208
+offset_bottom = 0.263992
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_0qqmn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 180.0
+mouse_filter = 2
+color = Color(0.67069, 0.67069, 0.67069, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="SymbolState" type="Label" parent="."]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 23.0
+metadata/_edit_use_anchors_ = true
+
+[node name="name" type="Label" parent="."]
+layout_mode = 0
+offset_top = 30.0
+offset_right = 80.0
+offset_bottom = 53.0
+metadata/_edit_use_anchors_ = true
+
+[node name="def_sym" type="Label" parent="."]
+layout_mode = 0
+offset_top = 60.0
+offset_right = 80.0
+offset_bottom = 83.0
+metadata/_edit_use_anchors_ = true
+
+[node name="EffectR" type="Label" parent="."]
+layout_mode = 0
+offset_top = 90.0
+offset_right = 80.0
+offset_bottom = 113.0
+metadata/_edit_use_anchors_ = true
+
+[node name="EffectG" type="Label" parent="."]
+layout_mode = 0
+offset_top = 120.0
+offset_right = 80.0
+offset_bottom = 143.0
+metadata/_edit_use_anchors_ = true
+
+[node name="EffectB" type="Label" parent="."]
+layout_mode = 0
+offset_top = 150.0
+offset_right = 80.0
+offset_bottom = 173.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
