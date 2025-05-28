@@ -15,12 +15,24 @@ var cards_reg = {
 	"card_999": {"name": "name_999", "def_sym": "R", "EffectR": "R_999", "EffectG": "G_999", "EffectB": "B_999"}
 	}
 
+var cards_reg_lv1 = {
+	"card_000": {"name": "name_000", "def_sym": "R", "EffectR": "R_000", "EffectG": "G_000", "EffectB": "B_000"},
+	"card_001": {"name": "name_001", "def_sym": "R", "EffectR": "R_001", "EffectG": "G_001", "EffectB": "B_001"},
+	"card_002": {"name": "name_002", "def_sym": "R", "EffectR": "R_002", "EffectG": "G_002", "EffectB": "B_002"}
+	}
+
 var rules_reg = {
 	"rule_001": {"current_state": "A", "read_symbol": "R", "new_state": "B", "write_symbol": "G", "direction": "Right"},
 	"rule_002": {"current_state": "B", "read_symbol": "G", "new_state": "C", "write_symbol": "B", "direction": "Left"},
 	"rule_003": {"current_state": "C", "read_symbol": "B", "new_state": "A", "write_symbol": "R", "direction": "Right"},
 	"rule_004": {"current_state": "A", "read_symbol": "G", "new_state": "D", "write_symbol": "B", "direction": "Left"},
 	"rule_005": {"current_state": "D", "read_symbol": "R", "new_state": "H", "write_symbol": "G", "direction": "Right"}
+	}
+	
+var rules_reg_lv1 = {
+	"rule_001": {"current_state": "A", "read_symbol": "R", "new_state": "B", "write_symbol": "G", "direction": "Right"},
+	"rule_002": {"current_state": "B", "read_symbol": "G", "new_state": "C", "write_symbol": "B", "direction": "Left"},
+	"rule_003": {"current_state": "C", "read_symbol": "B", "new_state": "A", "write_symbol": "R", "direction": "Right"}
 	}
 	
 func add_card(card_id: String):

@@ -17,6 +17,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
-custom_minimum_size = Vector2(160, 180)
+custom_minimum_size = Vector2(800, 180)
 layout_mode = 2
 size_flags_horizontal = 3

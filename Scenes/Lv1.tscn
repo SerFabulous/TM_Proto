@@ -1,3 +1,64 @@
-[gd_scene format=3 uid="uid://cskudg76653sf"]
+[gd_scene load_steps=6 format=3 uid="uid://cskudg76653sf"]
 
-[node name="Lv1" type="Node2D"]
+[ext_resource type="PackedScene" uid="uid://b0gq17ipt2dc0" path="res://Scenes/main_menu_return_bt.tscn" id="1_t38ex"]
+[ext_resource type="PackedScene" uid="uid://cl06gq2y7tmr6" path="res://Scenes/card_board_lv1.tscn" id="1_tmwrb"]
+[ext_resource type="PackedScene" uid="uid://ddaaoc04kqfa" path="res://Scenes/rule_board_lv1.tscn" id="2_y2t6u"]
+[ext_resource type="PackedScene" uid="uid://c1oyoygx2jmt6" path="res://Scenes/card_board.tscn" id="3_1sdo0"]
+[ext_resource type="PackedScene" uid="uid://kl1qkbk5xu6c" path="res://Scenes/rule_board.tscn" id="4_b3ayw"]
+
+[node name="Lv1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.313726, 0.392157, 0.584314, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_type_variation = &"HeaderLarge"
+text = "Lv1"
+
+[node name="AIBoard" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CardBoardLv1" parent="VBoxContainer/AIBoard" instance=ExtResource("1_tmwrb")]
+layout_mode = 2
+
+[node name="RuleBoardLv1" parent="VBoxContainer/AIBoard" instance=ExtResource("2_y2t6u")]
+layout_mode = 2
+
+[node name="PBoard" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CardBoard" parent="VBoxContainer/PBoard" instance=ExtResource("3_1sdo0")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RuleBoard" parent="VBoxContainer/PBoard" instance=ExtResource("4_b3ayw")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MainMenuReturnBt" parent="VBoxContainer" instance=ExtResource("1_t38ex")]
+layout_mode = 2

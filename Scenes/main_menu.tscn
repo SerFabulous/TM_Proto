@@ -37,3 +37,4 @@ text = "Lv3
 
 [connection signal="pressed" from="Builder_Cards" to="." method="_on_builder_cards_pressed"]
 [connection signal="pressed" from="Builder_Rules" to="." method="_on_builder_rules_pressed"]
+[connection signal="pressed" from="Level_1" to="." method="_on_level_1_pressed"]
